@@ -4,10 +4,12 @@ and publish logs from traffic captured to **Apache Kafka** (A Distributed Stream
 
 ## Installation & Run
 
-Download Releases Version
-
 ```bash
-CapturingNetworkPacket -k <IP_KAFKA_SERVER>:<PORT> -t <TOPIC_NAME>
+.\mvnw clean install
+```
+After run above comment, waiting it done. After that enter folder target and copy CapturingNetworkPacket.jar and run this below command
+```bash
+java -jar CapturingNetworkPacket.jar -k <IP_KAFKA_SERVER>:<PORT> -t <TOPIC_NAME>
 ```
 
 #### Port using
